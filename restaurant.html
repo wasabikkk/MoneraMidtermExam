@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurants in Dumaguete City</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for frames */
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make sure the content fills at least the viewport height */
+            font-family: Arial, sans-serif; /* Use a common font for better compatibility */
+        }
+
+        header {
+            padding: 20px;
+            text-align: center; /* Center the header content */
+        }
+
+        nav {
+            background-color: #628db2;
+            padding: 10px 0; /* Adjust padding */
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            display: inline-block; /* Ensure navigation links are displayed in a line */
+        }
+        
+        .frames {
+            display: flex;
+            flex-wrap: wrap; /* Allow frames to wrap to next line on smaller screens */
+            justify-content: center; /* Center frames horizontally */
+            margin: 20px 0; /* Adjust margin */
+        }
+        
+        .frame, .frame2 {
+            width: 90%; /* Adjust frame width for smaller screens */
+            max-width: 400px; /* Limit frame width on larger screens */
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            margin: 10px; /* Add margin between frames */
+            box-sizing: border-box; /* Ensure padding and border are included in width */
+        }
+        
+        .frame img, .frame2 img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 5px; /* Add border radius to images */
+        }
+        
+        .frame h3, .frame2 h3 {
+            margin-top: 10px; /* Adjust spacing */
+            margin-bottom: 5px; /* Adjust spacing */
+        }
+        
+        .frame a, .frame2 a {
+            display: block;
+            margin-top: 10px; /* Adjust spacing */
+            color: #4285F4;
+            text-decoration: none;
+        }
+        
+        .frame a:hover, .frame2 a:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        
+        .container {
+            padding: 0 20px; /* Adjust padding */
+            text-align: justify; /* Justify text for better readability */
+        }
+        
+        footer {
+            background-color: #23445f;
+            color: #fff;
+            padding: 10px 20px; /* Adjust padding */
+            text-align: center;
+            margin-top: auto; /* Push the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="slider.png" alt="Dumaguete Logo">
+        </div>
+        <div class="title">
+            <h1>Famous Restaurants in Dumaguete City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Attractions</button>
+            <div class="dropdown-content">
+                <a href="tourist.html">Tourist Spots in Dumaguete</a>
+                <a href="scuba.html">Scuba Diving</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Hotels</button>
+            <div class="dropdown-content">
+                <a href="hotel.html">Hotels in Dumaguete</a>
+                <a href="resort.html">Beach Resort</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Festivals</button>
+            <div class="dropdown-content">
+                <a href="buglasan.html">Buglasan Festival</a>
+                <a href="sandurot.html">Sandurot Festival</a>
+            </div>
+        </div>
+        <a href="restaurant.html">Restaurant</a>
+    </nav>
+
+    <div class="container">
+        <div class="content">
+            <h2>RESTAURANTS IN DUMAGUETE</h2>
+            <p>Being hungry is one of the things which should not happen in the City of Gentle People. There is an abundance of Restaurants in Dumaguete and it 
+            is no problem to get food 24/7. The lack of Filipino Restaurants all around the globe -compared to other Asian cuisines- doesn’t do the local kitchen 
+            any justice. International visitors should check out some of the local restaurants to get a taste of the local delights. Even local visitors will find 
+            out that the regional twist on many dishes is usually mouthwatering. For those who want to stay on the safe side are enough Restaurants with international 
+            kitchen around downtown Dumaguete, mainly around the area of the Rizal Boulevard. In the center of the city as well as in the Robinsons Place are several 
+            fast food outlets for all who can’t survive without a Big Mac.</p>
+        </div>
+    </div>
+
+    <div class="frames">
+        <div class="frame">
+            <img src="r1.jpg" alt="Atong Kamalig Restaurant">
+            <h3>Atong Kamalig Restaurant</h3>
+            <a href="https://youtu.be/mEWWLs-EQWc?si=blDBINQoGI9W-xiO">Watch Youtube Video</a>
+        </div>
+        <div class="frame">
+            <img src="r2.jpg" alt="Adamo Restaurant">
+            <h3>Adamo Restaurant</h3>
+            <a href="https://youtu.be/oD6BuWMhxZY?si=s7qj5GKUVAWg8JQJ">Watch Youtube Video</a>
+        </div>
+        <div class="frame">
+            <img src="r3.jpg" alt="Sans Rival Bistro">
+            <h3>Sans Rival Bistro</h3>
+            <a href="https://youtu.be/lFdl6X1aYZI?si=K86DDbgvQLT0XgP3">Watch Youtube Video</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <h2>INTERNATIONAL RESTAURANTS IN DUMAGUETE</h2>
+            <p>Most restaurants offering international cuisine are located downtown Dumaguete and at the Rizal Boulevard. Most are under European influence and offer 
+            German and Mediterranean cuisine like Casablanca Restaurant or a broad mix around the Globe like at Le Chalet. Mifune in Sta. Catalina Street offers Japanese 
+            Kitchen which is probably the closest to authentic Japanese food in whole Negros. Mexican inspired food can be found at the two branches of Mooon Café in 
+            Silliman Avenue and Robinsons Place.</p>
+            
+            <h2>CARINDERIAS AND LOCAL RESTAURANTS IN DUMAGUETE</h2>
+            <p>Filipinos love to eat and it would be a problem to walk five minutes through any village or city in the archipelago without passing any kind of food outlet. 
+            Most famous with locals are the simple eateries called Carinderias. A few pots with home-made dishes some plastic chairs around a table and there is your eatery. 
+            One simply lifts the lid of the pot, points out what dish he wants and adds some rice. The prices are low, the food yummy and the atmosphere unique. All dishes 
+            are of course also for take-away.</p>
+        </div>
+    </div>
+    
+    <div class="frames">
+        <div class="frame2">
+            <img src="r4.jpg" alt="Tropini Pizza">
+            <h3>Tropini Pizza</h3>
+            <a href="https://youtu.be/LoOORurz8Do?si=zfhbwDIYdp3783_p">Watch Youtube Video</a>
+        </div>
+        <div class="frame2">
+            <img src="r5.jpg" alt="Latino Spanish Restaurant">
+            <h3>Latino Spanish Restaurant</h3>
+            <a href="https://youtu.be/Q4sYEZpGJzM?si=wOUAQiN7EiGLmosj">Watch Youtube Video</a>
+        </div>
+    </div>
+    
+    <div class="frames">
+        <div class="frame2">
+            <img src="r6.png" alt="Kimstaurant in Dumaguete City">
+            <h3>Kimstaurant in Dumaguete City</h3>
+            <a href="https://youtu.be/3oJEK7CDeUQ?si=K6hZSn904DBSngfV">Watch Youtube Video</a>
+        </div>
+        <div class="frame2">
+            <img src="r7.jpg" alt="Mifune Japanese Restaurant">
+            <h3>Mifune Japanese Restaurant</h3>
+            <a href="https://youtu.be/wZOI_IL16OA?si=vVTD9fTxti0dY-dN">Watch Youtube Video</a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <p>While locals and expats got used to this kind of food-outlets, foreign tourist might be a bit surprised about the hygiene in terms of food storage etc. They 
+            might better stick to the local restaurants in Dumaguete which offer Filipino food in a more “western” environment. Check out some Carinderias and Restaurants 
+            with Filipino food here.</p>
+            
+            <h2>FAST FOOD IN DUMAGUETE</h2>
+            <p>Like anywhere in the world, fast food made its way into daily life of the population. Dumaguete has several international Fast Food Restaurants as well as local 
+            fast food chain. The dishes are cheap, ready to eat and in many cases the rice is unlimited. Some of the fast food restaurants in Dumaguete are open around the clock, 
+            others open for breakfast and close at midnight or –if they are located at a mall- with the location.</p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>@2023-2024 ITP4 | All Right Reserved</p>
+    </footer>
+</body>
+</html>

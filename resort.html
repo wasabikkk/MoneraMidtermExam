@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resorts in Dumaguete City</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Add custom CSS styles here */
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #628db2;
+            padding: 10px 20px; /* Added padding */
+            text-align: center;
+            position: relative;
+            z-index: 2; /* Ensure nav is above overlay */
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        .container {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 20px; /* Added padding */
+            background-color: #f9f9f9; /* Added background color */
+            border-radius: 5px; /* Added border radius */
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hotel-image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 5px;
+        }
+
+        .hotel-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .hotel-image .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Added semi-transparent background */
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 0.3s ease; /* Smooth transition */
+            z-index: 1; /* Ensure overlay is behind nav */
+        }
+
+        .hotel-image:hover .overlay {
+            opacity: 1; /* Show overlay on hover */
+        }
+
+        .hotel-image .overlay h2 {
+            margin: 0;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .hotel-description,
+        .hotel-facilities {
+            padding: 0 20px; /* Added horizontal padding */
+        }
+
+        .hotel-description h2,
+        .hotel-facilities h3 {
+            margin-top: 0; /* Remove top margin for headings */
+        }
+
+        .hotel-facilities ul {
+            padding-left: 20px;
+            list-style-type: square;
+            margin-top: 10px; /* Added spacing between photo description and facilities */
+        }
+
+        footer {
+            background-color: #23445f;
+            color: #fff;
+            padding: 10px 20px; /* Added padding */
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="slider.png" alt="Dumaguete Logo">
+        </div>
+        <div class="title">
+            <h1>Beach Resorts in Dumaguete City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Attractions</button>
+            <div class="dropdown-content">
+                <a href="tourist.html">Tourist Spots in Dumaguete</a>
+                <a href="scuba.html">Scuba Diving</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Hotels</button>
+            <div class="dropdown-content">
+                <a href="hotel.html">Hotels in Dumaguete</a>
+                <a href="resort.html">Beach Resort</a>
+            </div>
+        </div>
+		
+		<div class="dropdown">
+            <button class="dropbtn">Festivals</button>
+            <div class="dropdown-content">
+                <a href="buglasan.html">Buglasan Festival</a>
+                <a href="sandurot.html">Sandurot Festival</a>
+            </div>
+        </div>
+        <a href="restaurant.html">Restaurant</a>
+    </nav>
+
+    <!-- Resort 1 -->
+    <div class="container">
+        <div class="hotel-image">
+            <img src="resort1.jpg" alt="Resort 1">
+            <div class="overlay">
+                <h2>Atlantis Dive Resorts</h2>
+            </div>
+        </div>
+        <div class="hotel-description">
+            <h2>Atlantis Dive Resorts</h2>
+            <p>The perfect luxury getaway with everything you need! Enjoy watching the breathtaking sunrise across the ocean. Savor the flavors of the tropic and get an accommodation experience like no other!</p>
+        </div>
+        <div class="hotel-facilities">
+            <h3>Facilities</h3>
+            <ul>
+                <li>Private Beach</li>
+                <li>Bar & Restaurant</li>
+                <li>Boating</li>
+				<li>Travel & Tours</li>
+				<li>Spa & Massage</li>
+				<li>Scuba Diving & Snorkeling</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Resort 2 -->
+    <div class="container">
+        <div class="hotel-image">
+            <img src="resort2.jpg" alt="Resort 2">
+            <div class="overlay">
+                <h2>Pura Vida Beach & Dive Resort</h2>
+            </div>
+        </div>
+        <div class="hotel-description">
+            <h2>Pura Vida Beach & Dive Resort</h2>
+            <p>Warm, inviting and perfect for a holiday getaway! Everything you need to either lay back or explore is in your reach. Enjoy the soothing atmosphere of tropical goodness with the excitement of thrill and convenience.</p>
+        </div>
+        <div class="hotel-facilities">
+            <h3>Facilities</h3>
+            <ul>
+                <li>City Location</li>
+                <li>Restaurant</li>
+                <li>Massage & Spa</li>
+				<li>Laundry Services</li>
+				<li>Daily Housekeeping</li>
+				<li>Elevator</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Resort 3 -->
+    <div class="container">
+        <div class="hotel-image">
+            <img src="resort3.jpg" alt="Resort 3">
+            <div class="overlay">
+                <h2>Sea Dream Resort</h2>
+            </div>
+        </div>
+        <div class="hotel-description">
+            <h2>Sea Dream Resort</h2>
+            <p>A tropical getaway perfect for pleasure seekers away from the busy city streets. Relish on the services and amenities this wonderland has to offer. Get the ultimate peace and tranquility or the thrill and adventure you crave for.</p>
+        </div>
+        <div class="hotel-facilities">
+            <h3>Facilities</h3>
+            <ul>
+                <li>Golf Course</li>
+                <li>Bar & Restaurant</li>
+                <li>Diving & Water Sports</li>
+				<li>Spa & Fitness Center</li>
+				<li>Tours & Hiking</li>
+				<li>Kids Club</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Resort 4 -->
+    <div class="container">
+        <div class="hotel-image">
+            <img src="resort4.jpg" alt="Resort 4">
+            <div class="overlay">
+                <h2>Atmosphere Resort & Spa</h2>
+            </div>
+        </div>
+        <div class="hotel-description">
+            <h2>Atmosphere Resort & Spa</h2>
+            <p>Luxury has a new definition with this ultimate paradise that serves you like no other. Enjoy the great services and amenities such as the kid’s room, babysitting services, game room, playground, bicycle rental, car rental and a whole lot more!</p>
+        </div>
+        <div class="hotel-facilities">
+            <h3>Facilities</h3>
+            <ul>
+                <li>Private Beach</li>
+                <li>Spa & Sauna</li>
+                <li>Bar & Restaurant</li>
+				<li>Scuba Diving & Boating</li>
+				<li>Fitness Center & Yoga Room</li>
+				<li>Tours & Hiking</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Resort 5 -->
+    <div class="container">
+        <div class="hotel-image">
+            <img src="resort5.jpg" alt="Resort 5">
+            <div class="overlay">
+                <h2>Fish Unlimited Resort</h2>
+            </div>
+        </div>
+        <div class="hotel-description">
+            <h2>Fish Unlimited Resort</h2>
+            <p>Get the best deal for a holiday get away like no other now!  Enjoy the great location and the tropical atmosphere this beach and dive resort in Dauin has to offer. Either has a relaxing massage or explore the underwater paradise.</p>
+        </div>
+        <div class="hotel-facilities">
+            <h3>Facilities</h3>
+            <ul>
+                <li>Beach Front</li>
+                <li>Bar & Restaurant</li>
+                <li>Tours & Scuba Diving</li>
+				<li>Massage</li>
+				<li>Pets Allowed</li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <p>@2023-2024 ITP4 | All Right Reserved</p>
+    </footer>
+</body>
+
+</html>

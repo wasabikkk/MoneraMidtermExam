@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Spots in Dumaguete City</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Style for frames */
+        body {
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Make sure the content fills at least the viewport height */
+        }
+
+        header {
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #628db2;
+            padding: 10px 20px; /* Added padding */
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+        
+        .frames {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center frames horizontally */
+            padding: 20px;
+        }
+
+        .frame {
+            position: relative; /* Added position relative for containing the absolute positioned text */
+            width: calc(100% - 20px); /* Adjusted width to occupy full width */
+            max-width: 400px; /* Limiting maximum width for larger screens */
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            overflow: hidden; /* Added overflow hidden to contain absolutely positioned text */
+        }
+
+        /* Style for images */
+        .frame img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        /* Style for descriptions */
+        .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+            color: #fff;
+            padding: 10px;
+            box-sizing: border-box; /* Ensure padding is included in width */
+            transition: 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        /* Hover effect for description */
+        .frame:hover .description {
+            bottom: -50px; /* Move the description up on hover */
+        }
+
+        /* Center title */
+        .frame h3 {
+            text-align: center;
+        }
+        
+        footer {
+            background-color: #23445f;
+            color: #fff;
+            padding: 10px 20px; /* Added padding */
+            text-align: center;
+            margin-top: auto; /* Push the footer to the bottom */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="slider.png" alt="Dumaguete Logo">
+        </div>
+        <div class="title">
+            <h1>Tourist Spots in Dumaguete City</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Attractions</button>
+            <div class="dropdown-content">
+                <a href="tourist.html">Tourist Spots in Dumaguete</a>
+                <a href="scuba.html">Scuba Diving</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Hotels</button>
+            <div class="dropdown-content">
+                <a href="hotel.html">Hotels in Dumaguete</a>
+                <a href="resort.html">Beach Resort</a>
+            </div>
+        </div>
+        
+        <div class="dropdown">
+            <button class="dropbtn">Festivals</button>
+            <div class="dropdown-content">
+                <a href="buglasan.html">Buglasan Festival</a>
+                <a href="sandurot.html">Sandurot Festival</a>
+            </div>
+        </div>
+        <a href="restaurant.html">Restaurant</a>
+    </nav>
+    
+    <div class="container">
+        <div class="content">
+            <h2>TOURIST SPOTS IN DUMAGUETE</h2>
+            <p>Dumaguete is a great place to visit. As everybody has different ideas what to see and what to do, we put together some of the tourist spots 
+            in Dumaguete for your convenience. This will help you to get around and help you to plan your trip. The location of Dumaguete City leaves many 
+            options to visit many different tourist spots in Negros Oriental. That includes the visit of neighboring Islands like Siquijor or Apo Island.
+            <br>Your itinerary really depends on your time, if you want to see as much as possible in a few days, or are more on the relaxed side. To cover 
+            most of the interesting Tourist Spots in Dumaguete you will need one day without rushing it.</p>
+        </div>
+    </div>
+    
+    <div class="frames">
+        <div class="frame">
+            <h3>Rizal Boulevard</h3>
+            <img src="tourist1.jpg" alt="Tourist 1">
+            <div class="description">
+                <p>Rizal Boulevard is named after the late Dr. Jose Rizal, a man who is considered the national icon and here in the Philippines.</p>
+            </div>
+        </div>
+        <div class="frame">
+            <h3>St Catherine of Alexandria Cathedral</h3>
+            <img src="tourist2.jpg" alt="Tourist 2">
+            <div class="description">
+                <p>The Dumaguete Belfry stands right beside the Saint Catherine of Alexandria Cathedral, at one time it was used to call residents to mass.</p>
+            </div>
+        </div>
+        <div class="frame">
+            <h3>Siliman University</h3>
+            <img src="tourist3.jpg" alt="Tourist 3">
+            <div class="description">
+                <p>Silliman University, which in 2007 was rated one of the top five universities in the Philippines, has been given national landmark status.</p>
+            </div>
+        </div>
+        <div class="frame">
+            <h3>Chinese Bell Church</h3>
+            <img src="tourist4.jpg" alt="Tourist 4">
+            <div class="description">
+                <p>The Dumaguete Belfry stands right beside the Saint Catherine of Alexandria Cathedral, at one time it was used to call residents to mass.</p>
+            </div>
+        </div>
+        <div class="frame">
+            <h3>Quezon Park</h3>
+            <img src="tourist5.jpg" alt="Tourist 5">
+            <div class="description">
+                <p>The Quezon Park is one of the most notable land mark here in Dumaguete City. It faces two other landmarks: Dumaguete Cathedral and Belfry.</p>
+            </div>
+        </div>
+        <div class="frame">
+            <h3>Dumaguete Public Market</h3>
+            <img src="tourist6.jpg" alt="Tourist 5">
+            <div class="description">
+                <p>The Public Market is a bustling hive of locals, families, & tourists. The public market is where the Dumaguete population come together.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>@2023-2024 ITP4 | All Right Reserved</p>
+    </footer>
+</body>
+</html>

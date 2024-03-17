@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dumaguete City Festivals</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            line-height: 28.05px;
+        }
+
+        header {
+            background-color: #23445f;
+            color: #fff;
+            padding: 20px;
+            display: flex;
+            justify-content: center; /* Center items horizontally */
+            align-items: center; /* Center items vertically */
+        }
+
+        .logo img {
+            max-width: 100px;
+            margin-right: 20px; /* Add some spacing between logo and title */
+        }
+
+        .title {
+            text-align: center; /* Center the title */
+        }
+		
+		.top {
+			width: 100%;
+			overflow: hidden;
+		}
+
+		.top img {
+			width: 100%;
+			display: block;
+		}
+
+        nav {
+            background-color: #628db2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+
+        nav a:hover {
+            background-color: #4f7fa9;
+        }
+
+        .main-image {
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .main-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .sub-images {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Enable wrapping */
+            margin-top: 20px;
+        }
+
+        .image {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 0 10px;
+            flex-basis: calc(33.33% - 20px); /* 33.33% width with 20px margin */
+            margin-bottom: 20px; /* Add bottom margin */
+        }
+
+        .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .image:hover .overlay {
+            opacity: 1;
+        }
+
+        .overlay h2 {
+            margin: 0;
+            font-size: 16px;
+            text-align: center;
+        }
+
+        .footer {
+            background-color: #23445f;
+            color: #fff;
+            padding: 5px;
+            text-align: center;
+            position: auto;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Reduce spacing between content and main image */
+        .main-images {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="slider.png" alt="Dumaguete Logo">
+        </div>
+        <div class="title">
+            <h1>Dumaguete City Festivals</h1>
+        </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <div class="dropdown">
+            <button class="dropbtn">Attractions</button>
+            <div class="dropdown-content">
+                <a href="tourist.html">Tourist Spots in Dumaguete</a>
+                <a href="scuba.html">Scuba Diving</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Hotels</button>
+            <div class="dropdown-content">
+                <a href="hotel.html">Hotels in Dumaguete</a>
+                <a href="resort.html">Beach Resort</a>
+            </div>
+        </div>
+		
+		<div class="dropdown">
+            <button class="dropbtn">Festivals</button>
+            <div class="dropdown-content">
+                <a href="buglasan.html">Buglasan Festival</a>
+                <a href="sandurot.html">Sandurot Festival</a>
+            </div>
+        </div>
+        <a href="restaurant.html">Restaurant</a>
+    </nav>
+    
+	<div class="top">
+            <img src="s1.jpg" alt="Dumaguete Logo">
+    </div>
+	
+    <div class="container">
+        <div class="content">
+            <h2>SANDUROT FESTIVAL 2017</h2>
+            <p>The Sandurot Festival 2017 is celebrated in the month of September instead of November, as promised by the Tourism Office of Dumaguete City. 
+            The celebration of the Sandurot Festival 2017 was held with the highlight events of the street dancing parade and the showdown competition last Saturday, September 16, 2017.</p>
+            <p>The festivity day started with prayers, national anthem and of course a “short” opening show. A theatrical play was presented at the boulevard at the presence of start celebrity 
+            Angel Aquino, City Mayor Felipe Antonio “Ipe” Remollo, tourism heads, and other locals and guests.</p>
+        </div>
+    </div>
+    
+    <div class="main-images">
+        <div class="main-image">
+            <img src="mf1.jpg" alt="Main Gallery Image 1">
+        </div>
+        <div class="sub-images">
+            <div class="image">
+                <img src="mf2.jpg" alt="Sandurot Festival">
+                <div class="overlay">
+                    <h2>Sandurot Festival</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="mf3.jpg" alt="Sandurot Festival">
+                <div class="overlay">
+                    <h2>Sandurot Festival</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="mf4.jpg" alt="Sandurot Festival">
+                <div class="overlay">
+                    <h2>Sandurot Festival</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="mf5.jpg" alt="Sandurot Festival">
+                <div class="overlay">
+                    <h2>Sandurot Festival</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="mf6.jpg" alt="Sandurot Festival">
+                <div class="overlay">
+                    <h2>Sandurot Festival</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="mf7.jpg" alt="Sandurot Festival">
+                <div class="overlay">
+                    <h2>Sandurot Festival</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="content">
+            <h2>SANDUROT FESTIVAL STREET DANCING PARADE</h2>
+            <p>After the gathering and the opening show, it was time to finally start the street dancing parade. For this year’s street dancing music, the organizers thought it would 
+            be best to have the same festival music (on speakers) to be played during their parade.</p>
+            <p>Although it makes sense to have the uniform music for a competition, hearing it twice or thrice is enough for a single festival song. Disregarding the music, the bystanders and 
+            spectators were watching the parade regardless of the music loop. The colorful festival costumes and graceful dancing took the music to another level; and was quite enjoyable.</p>
+        </div>
+    </div>
+    
+    <div class="main-images">
+        <div class="main-image">
+            <img src="sf1.jpg" alt="Main Gallery Image 2">
+        </div>
+        <div class="sub-images">
+            <div class="image">
+                <img src="sf2.jpg" alt="Street Dancing">
+                <div class="overlay">
+                    <h2>Street Dancing</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="sf3.jpg" alt="Street Dancing">
+                <div class="overlay">
+                    <h2>Street Dancing</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="sf4.jpg" alt="Street Dancing">
+                <div class="overlay">
+                    <h2>Street Dancing</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="sf5.jpg" alt="Street Dancing">
+                <div class="overlay">
+                    <h2>Street Dancing</h2>
+                </div>
+            </div>
+			<div class="image">
+                <img src="sf6.jpg" alt="Street Dancing">
+                <div class="overlay">
+                    <h2>Street Dancing</h2>
+                </div>
+            </div>
+			<div class="image">
+                <img src="sf7.jpg" alt="Street Dancing">
+                <div class="overlay">
+                    <h2>Street Dancing</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<div class="container">
+        <div class="content">
+            <h2>SANDUROT FESTIVAL SHOWDOWN</h2>
+            <p>For the showdown portion of the festivity, the competition was held at Quezon Park. Hundreds of locals and guests crowded the park along with the presence of the Dumaguete City Mayor - Felipe Antonio Remollo. After weeks of hard practice 
+			and patience, the performers made their final best dance and was rewarded with the supportive cheers from the audience. The colorful costumes and props of the contingents added a certain enjoyment to the actual dancing of the different groups.</p>
+        </div>
+    </div>
+	
+	<div class="main-images">
+        <div class="main-image">
+            <img src="sh1.jpg" alt="Dumaguete City Mayor">
+        </div>
+        <div class="sub-images">
+            <div class="image">
+                <img src="sh2.jpg" alt="Festival Showdown">
+                <div class="overlay">
+                    <h2>Festival Showdown</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="sh3.jpg" alt="Festival Showdown">
+                <div class="overlay">
+                    <h2>Festival Showdown</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="sh4.jpg" alt="Festival Showdown">
+                <div class="overlay">
+                    <h2>Festival Showdown</h2>
+                </div>
+            </div>
+            <div class="image">
+                <img src="sh5.jpg" alt="Festival Showdown">
+                <div class="overlay">
+                    <h2>Festival Showdown</h2>
+                </div>
+            </div>
+			<div class="image">
+                <img src="sh6.jpg" alt="Festival Showdown">
+                <div class="overlay">
+                    <h2>Festival Showdown</h2>
+                </div>
+            </div>
+			<div class="image">
+                <img src="sh7.jpg" alt="Festival Showdown">
+                <div class="overlay">
+                    <h2>Festival Showdown</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+	<div class="container">
+        <div class="content">
+            <p>During the whole week of the Sandurot Festival celebration, the street dancing and showdown were the best parts of the whole event.</p>
+        </div>
+    </div>
+
+    <footer>
+        <p>@2023-2024 ITP4 | All Right Reserved</p>
+    </footer>
+</body>
+
+</html>
